@@ -1,0 +1,318 @@
+/* --- Estilos específicos para la página Campañas (ADAPTADO DE PROGRAMAS) --- */
+.campanas-detalle-seccion {
+    padding: 60px 8%;
+}
+
+.campanas-detalle-seccion h2 {
+    color: var(--color-texto-titulos);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.campana-completa {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna en escritorio inicialmente */
+    margin-bottom: 50px;
+    background-color: var(--color-fondo-secciones);
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    padding: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-items: center; /* Centra los elementos horizontalmente en la disposición vertical */
+    position: relative; /* Para la lluvia de emojis */
+    overflow: hidden;
+}
+
+.campana-info {
+    width: 80%; /* Ancho para el texto (ajusta si es necesario) */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.campana-info h3 {
+    color: var(--color-primario);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center; /* Asegura que el título también esté centrado */
+}
+
+.campana-info p {
+    line-height: 1.7;
+    text-align: justify; /* Justifica el párrafo */
+}
+
+.campana-imagen-principal {
+    width: 80%; /* Ancho similar a la imagen en Programas */
+    height: 400px; /* Altura fija similar a Programas (ajusta si es necesario) */
+    border-radius: 8px;
+    box-shadow: var(--sombra-ligera);
+    overflow: hidden;
+    margin-top: 20px; /* Espacio entre texto e imagen en la disposición vertical */
+    position: relative; /* Para el carrusel de imágenes */
+}
+
+.campana-imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.campana-imagen-principal img.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+    position: static;
+}
+
+.campana-galeria-simple {
+    width: 100%; /* O el ancho que necesites */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las miniaturas se envuelvan a la siguiente línea si no caben */
+    gap: 10px; /* Espacio entre las miniaturas */
+    margin-top: 20px;
+    justify-content: center; /* Centra las miniaturas horizontalmente en cada línea */
+    align-items: center; /* Centra verticalmente las miniaturas (opcional) */
+    overflow-x: auto; /* Mantiene el desplazamiento horizontal como respaldo si no caben todas */
+    padding-bottom: 10px;
+}
+
+.campana-galeria-simple img {
+    max-height: 100px; /* Ajusta la altura máxima según necesites */
+    width: auto; /* El ancho se ajusta proporcionalmente */
+    border-radius: 5px;
+    box-shadow: var(--sombra-ligera);
+    flex-shrink: 0; /* Evita que las imágenes se encojan demasiado */
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+    margin: 5px; /* Añade un pequeño margen alrededor de cada miniatura */
+}
+
+.campana-galeria-simple img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* --- Estilos para la lluvia de elementos --- */
+.lluvia-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.lluvia-container span {
+    position: absolute;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: llover 5s linear infinite;
+}
+
+@keyframes llover {
+    0% {
+        transform: translateY(-100%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode .campana-completa {
+    background-color: var(--color-fondo-secciones);
+    box-shadow: var(--sombra-suave);
+}
+
+/* --- Media queries para diseño responsive --- */
+@media (min-width: 769px) {
+    .campana-completa {
+        flex-direction: row; /* Disposición horizontal para pantallas grandes */
+        align-items: stretch; /* Estira los elementos verticalmente */
+    }
+
+    .campana-info {
+        width: 50%; /* El texto ocupa la mitad del ancho */
+        padding-right: 30px;
+        margin-bottom: 0; /* Elimina el margen inferior en disposición horizontal */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el texto verticalmente */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .campana-info h3 {
+        color: var(--color-primario);
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        text-align: center; /* Centra el texto del título horizontalmente */
+    }
+
+    .campana-imagen-principal {
+        width: 80%; /* Ancho para la imagen principal (ajusta si es necesario) */
+        height: auto; /* La altura se ajustará proporcionalmente */
+        max-height: 400px; /* Altura máxima (ajusta si es necesario) */
+        border-radius: 8px;
+        box-shadow: var(--sombra-ligera);
+        overflow: hidden;
+        margin-top: 20px; /* Espacio entre el texto y la imagen */
+        margin-left: auto; /* Márgenes automáticos a los lados para centrar */
+        margin-right: auto;
+        position: relative; /* Para el carrusel */
+        display: block; /* Asegura que se comporte como un bloque para los márgenes automáticos */
+    }
+
+    .campana-imagen-principal img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Muestra la imagen completa manteniendo la proporción */
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    .campana-imagen-principal img.active {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .campana-completa {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .campana-info {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: left; /* Vuelve a la alineación izquierda en móviles */
+    }
+
+    .campana-info h3 {
+        text-align: center; /* Centra el título en móviles */
+    }
+
+    .campana-imagen-principal {
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente en móviles */
+        max-height: 300px; /* Altura máxima para no ocupar toda la pantalla */
+        margin-top: 20px;
+        margin-left: 0;
+        /* REMOVE O COMENTA LA SIGUIENTE LÍNEA PARA QUE LA IMAGEN NO SE MUEVA EN EL ORDEN */
+        /* order: 1; */
+    }
+
+    .campana-imagen-principal img {
+        object-fit: cover; /* O contain si prefieres */
+        position: absolute; /* Mantiene el posicionamiento absoluto para el carrusel */
+    }
+
+    .campana-imagen-principal img.active {
+        position: static; /* Vuelve al flujo normal para ser visible */
+    }
+
+    .campana-galeria-simple {
+        width: 100%; /* O el ancho que necesites */
+        display: flex;
+        flex-wrap: nowrap; /* Evita que las miniaturas se envuelvan a la siguiente línea */
+        gap: 10px; /* Espacio entre las miniaturas */
+        margin-top: 20px;
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        padding-bottom: 10px; /* Espacio para la barra de desplazamiento */
+        justify-content: flex-start; /* Alinea las miniaturas al inicio (izquierda) */
+        align-items: center; /* Centra verticalmente las miniaturas (opcional) */
+        /* OPCIONAL: Puedes añadir esto para asegurarte de que aparezca después de la imagen */
+        /* order: 2; */
+    }
+
+    .campana-galeria-simple img {
+        max-height: 60px; /* Ajusta la altura máxima según necesites para móvil */
+        width: auto; /* El ancho se ajusta proporcionalmente */
+        border-radius: 5px;
+        box-shadow: var(--sombra-ligera);
+        flex-shrink: 0; /* Evita que las imágenes se encojan */
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+        object-fit: contain; /* Asegura que la imagen completa sea visible */
+        margin-right: 10px; /* Espacio a la derecha de cada miniatura */
+    }
+
+    .campana-galeria-simple img:last-child {
+        margin-right: 0; /* Elimina el margen derecho de la última miniatura */
+    }
+
+    .lluvia-container span {
+        font-size: 1em; /* Reduce el tamaño en móviles si es necesario */
+    }
+}
+
+/* Estilos para el Lightbox (sin cambios) */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.lightbox-imagen-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#lightbox-imagen {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.cerrar-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar-lightbox:hover {
+    color: #ccc;
+}

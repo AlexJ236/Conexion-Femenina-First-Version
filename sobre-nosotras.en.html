@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Conexión Femenina</title>
+    <script>
+        (() => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre-nosotras.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.en.html" class="logo-link">
+                <img src="images/Logo.png" alt="Conexión Femenina Logo" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.en.html">Home</a></li>
+                    <li><a href="sobre-nosotras.en.html">About Us</a></li>
+                    <li><a href="programas.en.html">Programs</a></li>
+                    <li><a href="campanas.en.html">Campaigns</a></li>
+                    <li><a href="actividades.en.html">Recreational Activities</a></li> </ul>
+            </nav>
+        </div>
+        <button id="theme-toggle-button" aria-label="Toggle theme">☀️</button>
+        <div class="language-selector">
+            <button class="language-button" data-lang="es" aria-label="Switch to Spanish" onclick="window.location.href='sobre-nosotras.html'">
+                <img src="images/esp.jpeg" alt="Spanish" width="24" height="24">
+            </button>
+            <button class="language-button active" data-lang="en" aria-label="Switch to English" onclick="window.location.href='sobre-nosotras-en.html'">
+                <img src="images/eng.jpeg" alt="English" width="24" height="24">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="mision-vision" class="seccion-destacada">
+            <div class="bloque-mision">
+                <h2>Our Mission</h2>
+                <p>To empower the women of Chincha through education, personal development, psychological support, and access to opportunities that allow them to reach their full potential. We believe in the power of connection, unity, and collaboration to build a more just and equitable society.</p>
+            </div>
+            <div class="bloque-vision">
+                <h2>Our Vision</h2>
+                <p>To be a benchmark for change in the lives of vulnerable women, promoting their integral development and transforming them into agents of change within their communities. We aspire to expand our work to other regions, bringing our message of hope and empowerment to more women in Peru.</p>
+            </div>
+        </section>
+
+        <section id="nuestros-valores" class="seccion-valores">
+            <h2>Our Values</h2>
+            <div class="valores-contenedor">
+                <div class="bloque-valor">
+                    <h3>Empowerment</h3>
+                    <p>We believe that all women have the right and the ability to take control of their lives and decisions.</p>
+                    <div class="icono">💪</div>
+                </div>
+                <div class="bloque-valor">
+                    <h3>Equity</h3>
+                    <p>We work for a world where all women have what they need to grow and thrive.</p>
+                    <div class="icono">⚖️</div>
+                </div>
+                <div class="bloque-valor">
+                    <h3>Solidarity</h3>
+                    <p>We foster a community of mutual support where women help and inspire each other.</p>
+                    <div class="icono">🤝</div>
+                </div>
+                <div class="bloque-valor">
+                    <h3>Education</h3>
+                    <p>We consider education to be the key to change and progress in people's lives.</p>
+                    <div class="icono">📚</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexión Femenina. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/1NVFYoZARJ/?mibextid=wwXIfr" target="_blank" aria-label="Link to our Facebook page">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/conexionfemeninachincha?igsh=MWI1MTY4Z2lzcXNiMA==" target="_blank" aria-label="Link to our Instagram page">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@conexion_femenina?_t=ZM-8vZD4TjtetR&_r=1" target="_blank" aria-label="Link to our TikTok page">
+                <img src="images/tiktok-icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p class="email-footer">conexionfemenina2024@gmail.com</p>
+        <p>Made with love 🥞</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

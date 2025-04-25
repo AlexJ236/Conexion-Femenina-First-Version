@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexión Femenina - Home</title>
+    <script>
+        (() => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.en.html" class="logo-link">
+                <img src="images/Logo.png" alt="Conexión Femenina Logo" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.en.html">Home</a></li>
+                    <li><a href="sobre-nosotras.en.html">About Us</a></li>
+                    <li><a href="programas.en.html">Programs</a></li>
+                    <li><a href="campanas.en.html">Campaigns</a></li>
+                    <li><a href="actividades.en.html">Recreational Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="theme-toggle-button" aria-label="Toggle theme">☀️</button>
+        <div class="language-selector">
+            <button class="language-button" data-lang="es" aria-label="Switch to Spanish" onclick="window.location.href='index.html'">
+                <img src="images/esp.jpeg" alt="Spanish" width="24" height="24">
+            </button>
+            <button class="language-button active" data-lang="en" aria-label="Switch to English" onclick="window.location.href='index.en.html'">
+                <img src="images/eng.jpeg" alt="English" width="24" height="24">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to CONEXIÓN FEMENINA</h2>
+                <p>Uniting women, creating power.</p>
+            </div>
+        </section>
+
+        <section id="introduccion" class="introduccion-seccion">
+            <div class="introduccion-texto">
+                <h3>Discover Conexión Femenina</h3>
+                <p>Conexión Femenina was born from a very personal story. At the age of 14, I received a scholarship to study English thanks to the United States Embassy. That opportunity changed my life: not only did I learn a new language, but I discovered my voice, my abilities, and the value of someone believing in me when I was just beginning to believe in myself. That scholarship didn't just give me classes, it gave me wings. And since then, I have dreamed of giving back what was once given to me: an opportunity. Conexión Femenina was born without a penny, but with a heart full of purpose. It started in my city, Chincha, with the conviction that many other women also deserve a helping hand, a safe space, an opportunity to grow. Today, we offer English classes, emotional workshops, and activities that empower women who, like me, only needed someone to believe in them. We don't have large funds, but we have a network of love, effort, and faith. Every step has been possible thanks to people who have been moved by our story and have wanted to contribute in any way they can. Here, every gesture counts. Every help, no matter how small it may seem, makes a world of difference.</p>
+                <p>If any part of this story touched your heart, you are already part of it. Thank you for being here.</p>
+                <p class="firma">Mariana Huertas</p>
+            </div>
+            <div class="introduccion-imagen">
+                <img src="images/Portada.jpg" alt="Conexión Femenina Cover">
+            </div>
+        </section>
+
+        <section id="programas-resumen">
+            <h3>Our Programs</h3>
+            <p>We promote the growth and well-being of women through transformative initiatives.</p>
+            <div class="programas-contenedor">
+                <div class="programa-tarjeta" id="card-sse">
+                    <h4>She Speaks English</h4>
+                    <p>We teach English as a tool for freedom.</p>
+                    <a href="programas.en.html#she-speaks-english" class="boton-tarjeta">Read More</a>
+                </div>
+                <div class="programa-tarjeta" id="card-entrenosotras">
+                    <h4>Entre Nosotras</h4>
+                    <p>We conduct workshops on self-esteem and leadership.</p>
+                    <a href="programas.en.html#entre-nosotras" class="boton-tarjeta">Read More</a>
+                </div>
+                <div class="programa-tarjeta" id="card-conexion">
+                    <h4>Conexión sin Barreras</h4>
+                    <p>We create inclusive spaces, because disability does not mean inability.</p>
+                    <a href="programas.en.html#conexion-sin-barreras" class="boton-tarjeta">Read More</a>
+                </div>
+                <div class="programa-tarjeta" id="card-promo">
+                    <h4>Promo que Inspira</h4>
+                    <p>5th-grade high school students seek to undertake, lead, and dream, to have their prom party.</p>
+                    <a href="programas.en.html#promo-que-inspira" class="boton-tarjeta">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="campanas-resumen">
+            <h3>Our Solidarity Campaigns</h3>
+            <p>We mobilize hearts and resources to generate a positive impact in our community.</p>
+            <div class="campanas-contenedor">
+                <div class="campana-tarjeta" id="card-abrigo">
+                    <h4>Un Abrazo contra el Frío</h4>
+                    <p>We bring warmth and hope to those who need it most during winter.</p>
+                    <a href="campanas.en.html#un-abrazo-contra-el-frio" class="boton-tarjeta">Read More</a>
+                </div>
+                <div class="campana-tarjeta" id="card-navidenas">
+                    <h4>Christmas Campaigns (Chincha and Ica)</h4>
+                    <p>We share joy and gifts with children in vulnerable situations.</p>
+                    <a href="campanas.en.html#campanas-navidenas" class="boton-tarjeta">Read More</a>
+                </div>
+                <div class="campana-tarjeta" id="card-ciclos">
+                    <h4>Cierra Ciclos y Abre Sonrisas</h4>
+                    <p>Donation of stuffed animals from exes to bring a smile to a child.</p>
+                    <a href="campanas.en.html#cierra-ciclos-abre-sonrisas" class="boton-tarjeta">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="donations">
+            <h3>Support Our Work</h3>
+            <p>Your donation makes it possible for us to continue empowering women and transforming communities.</p>
+            <div class="donation-buttons">
+                <div id="donate-button-container">
+                    <div id="donate-button"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                        PayPal.Donation.Button({
+                            env:'production',
+                            hosted_button_id:'FD5RPBXGZ4LL4',
+                            image: {
+                                src:'https://pics.paypal.com/00/s/ZGM2MmZmMzQtNmEzYS00MzMwLTg0NGQtYmRkYTczMzQ3ZTU2/file.PNG',
+                                alt:'Donate with PayPal button',
+                                title:'PayPal - The safer, easier way to pay online!',
+                            }
+                        }).render('#donate-button');
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexión Femenina. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/1NVFYoZARJ/?mibextid=wwXIfr" target="_blank" aria-label="Link to our Facebook page">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/conexionfemeninachincha?igsh=MWI1MTY4Z2lzcXNiMA==" target="_blank" aria-label="Link to our Instagram page">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@conexion_femenina?_t=ZM-8vZD4TjtetR&_r=1" target="_blank" aria-label="Link to our TikTok page">
+                <img src="images/tiktok-icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p class="email-footer">conexionfemenina2024@gmail.com</p>
+        <p>Made with love 🥞</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

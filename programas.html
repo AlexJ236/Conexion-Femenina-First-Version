@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas - Conexión Femenina</title>
+    <script>
+        (() => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/programas.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/Logo.png" alt="Logo Conexión Femenina" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotras.html">Sobre Nosotras</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="campanas.html">Campañas</a></li>
+                    <li><a href="actividades.html">Actividades Recreativas</a></li> </ul>
+            </nav>
+        </div>
+        <button id="theme-toggle-button" aria-label="Cambiar tema">☀️</button>
+        <div class="language-selector">
+            <button class="language-button active" data-lang="es" aria-label="Cambiar a español" onclick="window.location.href='programas.html'">
+                <img src="images/esp.jpeg" alt="Español" width="24" height="24">
+            </button>
+            <button class="language-button" data-lang="en" aria-label="Cambiar a inglés" onclick="window.location.href='programas.en.html'">
+                <img src="images/eng.jpeg" alt="Inglés" width="24" height="24">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="nuestros-programas-detalle" class="programas-detalle-seccion">
+            <h2>Nuestros Programas</h2>
+
+            <div class="programa-completo" data-programa="she-speaks-english">
+                <div class="programa-info">
+                    <h3>She Speaks English</h3>
+                    <p>“She Speaks English” es un programa de becas impulsado por Conexión Femenina que brinda clases gratuitas de inglés a jóvenes mujeres de la provincia de Chincha. Creemos que el idioma puede ser una herramienta poderosa para abrir puertas, ampliar horizontes y fortalecer la confianza.
+                        Aquí, cada beca representa una historia de esperanza. Cada clase es un paso hacia la confianza, el liderazgo y la libertad de elegir el propio camino. Muchas de nuestras participantes son jóvenes con talento, fuerza y enormes ganas de salir adelante, pero sin los recursos para acceder a una educación de calidad. Este programa les ofrece lo que merecen: una oportunidad real.
+                        “She Speaks English” no tiene detrás a grandes empresas ni presupuestos millonarios. Tiene un corazón gigante, un equipo comprometido y una comunidad que cree en el poder de las mujeres. Hasta ahora, hemos llegado lejos con muy poco. Pero soñamos con llegar aún más lejos.
+                        Tú también puedes ser parte de este sueño.
+                        Con tu apoyo —grande o pequeño— nos ayudas a seguir cambiando historias, una palabra, una clase, una voz a la vez.</p>
+                </div>
+                <div class="programa-imagen-principal">
+                    <img src="images/Ceremonia 1.jpg" alt="Imagen principal She Speaks English" class="active">
+                    <img src="images/Ceremonia 2.jpg" alt="Ceremonia 2">
+                    <img src="images/Ceremonia 3.jpg" alt="Ceremonia 3">
+                    <img src="images/Ceremonia 4.jpg" alt="Ceremonia 4">
+                    <img src="images/Ceremonia 5.jpg" alt="Ceremonia 5">
+                    <img src="images/Ceremonia 6.jpg" alt="Ceremonia 6">
+                    <img src="images/Ceremonia 7.jpg" alt="Ceremonia 7">
+                    <img src="images/Ceremonia 8.jpg" alt="Ceremonia 8">
+                    <img src="images/Ceremonia 9.jpg" alt="Ceremonia 9">
+                    <img src="images/Ceremonia 10.jpg" alt="Ceremonia 10">
+                    <img src="images/Ceremonia 11.jpg" alt="Ceremonia 11">
+                    <img src="images/Ceremonia 12.jpg" alt="Ceremonia 12">
+                    <img src="images/Ceremonia 13.jpg" alt="Ceremonia 13">
+                    <img src="images/Ceremonia 14.jpg" alt="Ceremonia 14">
+                </div>
+                <div class="programa-galeria-simple">
+                    <img src="images/Ceremonia 1.jpg" alt="Ceremonia 1">
+                    <img src="images/Ceremonia 2.jpg" alt="Ceremonia 2">
+                    <img src="images/Ceremonia 3.jpg" alt="Ceremonia 3">
+                    <img src="images/Ceremonia 4.jpg" alt="Ceremonia 4">
+                    <img src="images/Ceremonia 5.jpg" alt="Ceremonia 5">
+                    <img src="images/Ceremonia 6.jpg" alt="Ceremonia 6">
+                    <img src="images/Ceremonia 7.jpg" alt="Ceremonia 7">
+                    <img src="images/Ceremonia 8.jpg" alt="Ceremonia 8">
+                    <img src="images/Ceremonia 9.jpg" alt="Ceremonia 9">
+                    <img src="images/Ceremonia 10.jpg" alt="Ceremonia 10">
+                    <img src="images/Ceremonia 11.jpg" alt="Ceremonia 11">
+                    <img src="images/Ceremonia 12.jpg" alt="Ceremonia 12">
+                    <img src="images/Ceremonia 13.jpg" alt="Ceremonia 13">
+                    <img src="images/Ceremonia 14.jpg" alt="Ceremonia 14">
+                </div>
+            </div>
+
+            <div class="programa-completo" data-programa="entre-nosotras">
+                <div class="programa-info">
+                    <h3>Entre Nosotras</h3>
+                    <p>“Entre Nosotras” nace de la necesidad urgente de crear un espacio seguro, humano y profundamente empático entre mujeres. Un lugar donde podamos hablar sin miedo, sanar sin vergüenza y crecer sin sentirnos solas. Porque sabemos que muchas veces, lo que más necesitamos no es una solución inmediata, sino alguien que nos escuche, que nos entienda y nos diga: “yo también pasé por eso”.
+
+                        Este programa ofrece talleres emocionales, charlas sobre autocuidado, amor propio, relaciones sanas y prevención de violencia, guiadas por profesionales comprometidas y mujeres que han vivido en carne propia lo que hoy comparten con amor y sororidad.
+                        
+                        Aquí no hay juicios. Solo empatía.
+                        Aquí no hay competencia. Solo apoyo.
+                        Aquí no hay silencios. Solo voces que se acompañan.
+                        
+                        “Entre Nosotras” es ese abrazo que muchas no recibimos a tiempo. Es una red tejida con historias, lágrimas, risas y valentía. Un espacio que ha llegado a transformar la vida de muchas mujeres de Chincha que, por años, creyeron que estaban solas.
+                        
+                        Y no lo están.
+                        
+                        Tú también puedes ser parte de esta red.
+                        Tu apoyo, tu voz o tu gesto pueden ayudar a que más mujeres encuentren en este espacio lo que tanto tiempo buscaron: comprensión, fuerza y nuevas posibilidades.</p>
+                </div>
+                <div class="programa-imagen-principal">
+                    <img src="images/Taller 1.jpg" alt="Imagen principal Entre Nosotras" class="active">
+                    <img src="images/Taller 2.jpg" alt="Taller 2">
+                    <img src="images/Taller 3.jpg" alt="Taller 3">
+                    <img src="images/Taller 4.jpg" alt="Taller 4">
+                    <img src="images/Taller 5.jpg" alt="Taller 5">
+                    <img src="images/Taller 6.jpg" alt="Taller 6">
+                </div>
+                <div class="programa-galeria-simple">
+                    <img src="images/Taller 1.jpg" alt="Taller 1">
+                    <img src="images/Taller 2.jpg" alt="Taller 2">
+                    <img src="images/Taller 3.jpg" alt="Taller 3">
+                    <img src="images/Taller 4.jpg" alt="Taller 4">
+                    <img src="images/Taller 5.jpg" alt="Taller 5">
+                    <img src="images/Taller 6.jpg" alt="Taller 6">
+                </div>
+            </div>
+
+            <div class="programa-completo" data-programa="conexion-sin-barreras">
+                <div class="programa-info">
+                    <h3>Conexión sin Barreras</h3>
+                    <p>“Conexión Sin Barreras” es un acto de amor, de empatía y de dignidad. Es un programa que busca incluir a mujeres con discapacidad en la vida cotidiana, en espacios donde por años han sido invisibles, marginadas o subestimadas.
+
+                        Este proyecto nace desde la fuerza y la historia real de una mujer con discapacidad que, pese a todo, logró salir adelante. Hoy, esa misma mujer se convierte en guía, en amiga, en referente. Visita a otras mujeres con discapacidad, las escucha, las abraza con su historia, y les recuerda que no están solas, que su vida vale, y que también tienen derecho a soñar, reír, crecer y ser parte.
+                        
+                        “Conexión Sin Barreras” es mucho más que un programa social. Es una red fraterna que se construye visita a visita, palabra a palabra, desde la experiencia real y la voluntad de transformar realidades. Queremos que cada mujer sepa que su voz importa, que su existencia es necesaria y que puede volver a creer en sí misma, incluso en los días más difíciles.
+                        
+                        Aquí no venimos a salvar a nadie. Venimos a caminar juntas.
+                        A romper barreras invisibles. A volver visible lo que siempre fue valioso.
+                        
+                        Con tu apoyo, podemos llegar a más hogares, más corazones, más mujeres que esperan ser vistas no por su limitación, sino por su inmenso valor.</p>
+                </div>
+                <div class="programa-imagen-principal">
+                    <img src="images/Conexión sin barreras 1.jpg" alt="Imagen principal Conexión sin Barreras" class="active">
+                    <img src="images/Conexión sin barreras 2.jpg" alt="Conexión sin barreras 2">
+                    <img src="images/Conexión sin barreras 3.jpg" alt="Conexión sin barreras 3">
+                </div>
+                <div class="programa-galeria-simple">
+                    <img src="images/Conexión sin barreras 1.jpg" alt="Conexión sin barreras 1">
+                    <img src="images/Conexión sin barreras 2.jpg" alt="Conexión sin barreras 2">
+                    <img src="images/Conexión sin barreras 3.jpg" alt="Conexión sin barreras 3">
+                </div>
+            </div>
+
+            <div class="programa-completo" data-programa="promo-que-inspira">
+                <div class="programa-info">
+                    <h3>Promo que Inspira</h3>
+                    <p>Todas soñamos con ese momento especial: la noche de la promoción. Un vestido bonito, música, fotos con amigas y la sensación de haber llegado hasta aquí. Pero para muchas jóvenes, ese sueño se ve lejano, casi imposible… no por falta de ganas, sino por falta de recursos.
+
+                        “Promo que Inspira” nace para acompañarlas, para decirles que sí se puede, y que no están solas.
+                        
+                        Este programa guía a chicas que desean celebrar su fiesta de promoción, pero no tienen cómo costearla. Les enseño —como mentora y desde la experiencia— a organizarse, a emprender, a buscar fondos con creatividad, con esfuerzo, con corazón. Les ayudo a creer en ellas mismas, a confiar en su capacidad, y a transformar un sueño en una meta alcanzable.
+                        
+                        Porque aquí no se trata solo de una fiesta. Se trata de aprender a luchar por lo que una quiere. De sentirse capaz, valiosa, y merecedora de celebrar su historia.
+                        
+                        He visto cómo sus ojos brillan cuando logran vender su primer producto, cuando ven que juntas avanzan, cuando entienden que lo que parecía inalcanzable, se vuelve real.
+                        
+                        Promo que Inspira es eso: un abrazo, una guía, una mano amiga.
+                        Y tú también puedes ser parte. Con tu apoyo, podemos seguir ayudando a que más chicas celebren no solo su promoción, sino todo lo que han superado para llegar hasta allí.</p>
+                </div>
+                <div class="programa-imagen-principal">
+                    <img src="images/Promo 1.jpg" alt="Imagen principal Promo que Inspira" class="active">
+                    <img src="images/Promo 2.jpg" alt="Promo 2">
+                    <img src="images/Promo 3.jpg" alt="Promo 3">
+                    <img src="images/Promo 4.jpg" alt="Promo 4">
+                </div>
+                <div class="programa-galeria-simple">
+                    <img src="images/Promo 1.jpg" alt="Promo 1">
+                    <img src="images/Promo 2.jpg" alt="Promo 2">
+                    <img src="images/Promo 3.jpg" alt="Promo 3">
+                    <img src="images/Promo 4.jpg" alt="Promo 4">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="cerrar-lightbox">&times;</span>
+        <img id="lightbox-imagen" src="" alt="Imagen Ampliada">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Conexión Femenina. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/1NVFYoZARJ/?mibextid=wwXIfr" target="_blank" aria-label="Enlace a nuestra página de Facebook">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/conexionfemeninachincha?igsh=MWI1MTY4Z2lzcXNiMA==" target="_blank" aria-label="Enlace a nuestra página de Instagram">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@conexion_femenina?_t=ZM-8vZD4TjtetR&_r=1" target="_blank" aria-label="Enlace a nuestra página de TikTok">
+                <img src="images/tiktok-icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p class="correo-footer">conexionfemenina2024@gmail.com</p>
+        <p>Hecho con amor 🥞</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/programas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Sección Misión y Visión */
+#mision-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: var(--color-fondo-secciones);
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    margin-bottom: 60px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-mision, .bloque-vision {
+    padding: 30px;
+    border-left: 5px solid var(--color-primario);
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    box-shadow: var(--sombra-ligera);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.bloque-mision h2, .bloque-vision h2 {
+    color: var(--color-texto-titulos);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.bloque-mision p, .bloque-vision p {
+    line-height: 1.8;
+}
+
+/* --- Estilos para la sección Nuestros Valores (DISTRIBUCIÓN 2x2) --- */
+#nuestros-valores {
+    padding: 60px 8%;
+    background-color: var(--color-fondo-secciones);
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    margin-bottom: 60px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nuestros-valores h2 {
+    color: var(--color-texto-titulos);
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.valores-contenedor {
+    display: grid; /* Usamos Grid Layout para una distribución más controlada */
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual ancho */
+    gap: 30px; /* Espacio entre las celdas de la cuadrícula */
+    max-width: 800px; /* Ancho máximo del contenedor de valores (ajusta según necesites) */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.bloque-valor {
+    padding: 30px;
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    box-shadow: var(--sombra-ligera);
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-valor h3 {
+    color: var(--color-primario);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.bloque-valor p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.icono {
+    font-size: 2em;
+    color: var(--color-acento);
+}
+
+/* --- Media query para diseño responsive (Móviles) --- */
+@media (max-width: 768px) {
+    .valores-contenedor {
+        grid-template-columns: 1fr; /* Vuelve a 1 columna en pantallas pequeñas */
+        text-align: left; /* Alinea el texto a la izquierda en móviles */
+    }
+
+    .bloque-valor {
+        text-align: left; /* Asegura la alineación del texto en los bloques en móviles */
+    }
+
+    .icono {
+        float: right; /* Mueve el icono a la derecha en móviles */
+        margin-top: -10px;
+    }
+}
+
+/* Estilos para los iconos de redes sociales en el footer */
+.redes-sociales img, .social-media img {
+    width: 60px; /* Ajusta este valor al tamaño deseado */
+    height: 60px; /* Ajusta este valor al tamaño deseado */
+    margin-right: 15px; /* Opcional: espacio entre los iconos */
+    vertical-align: middle; /* Opcional: alinea verticalmente los iconos con el texto si lo hay */
+}
+
+/* Opcional: quitar el margen derecho del último icono */
+.redes-sociales img:last-child, .social-media img:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para el contenedor de los iconos para centrarlos */
+.redes-sociales, .social-media {
+    display: flex; /* Coloca los iconos en línea horizontalmente */
+    align-items: center; /* Alinea verticalmente los iconos en el centro de su contenedor */
+    justify-content: center; /* Centra los iconos horizontalmente dentro del footer */
+}
+
+/* Estilos para el correo electrónico en el footer (centrado) */
+.correo-footer, .email-footer {
+    text-align: center; /* Cambiamos a centrar el texto */
+    margin-top: 5px; /* Espacio entre el correo y los otros elementos del footer */
+    font-size: 1em; /* Tamaño de fuente más pequeño */
+    color: #ffffff; /* Color del texto del correo */
+}

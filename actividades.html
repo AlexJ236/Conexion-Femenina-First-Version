@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades Recreativas - Conexión Femenina</title>
+    <script>
+        (() => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/actividades.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/Logo.png" alt="Logo Conexión Femenina" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotras.html">Sobre Nosotras</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="campanas.html">Campañas</a></li>
+                    <li><a href="actividades.html" class="active">Actividades Recreativas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="theme-toggle-button" aria-label="Cambiar tema">☀️</button>
+        <div class="language-selector">
+            <button class="language-button active" data-lang="es" aria-label="Cambiar a español" onclick="window.location.href='actividades.html'">
+                <img src="images/esp.jpeg" alt="Español" width="24" height="24">
+            </button>
+            <button class="language-button" data-lang="en" aria-label="Cambiar a inglés" onclick="window.location.href='actividades.en.html'">
+                <img src="images/eng.jpeg" alt="Inglés" width="24" height="24">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="nuestras-actividades-detalle" class="actividades-detalle-seccion">
+            <h2>Nuestras Actividades Recreativas</h2>
+
+            <div class="campana-completa" data-campana="dia-de-piscina-el-paraiso">
+                <div class="lluvia-container"></div>
+                <div class="campana-info">
+                    <h3>Día de Piscina en "El Paraíso"</h3>
+                    <p>Un día lleno de diversión, descanso y compañerismo fue el Día de Piscina en El Paraíso, donde nuestras voluntarias disfrutaron de un merecido espacio para relajarse y fortalecer los lazos que nos unen. En un ambiente de confianza y amistad, compartimos risas, juegos y momentos especiales, reafirmando la importancia de cuidarnos mutuamente y disfrutar de la vida. Este evento fue más que un día de descanso; fue una oportunidad para celebrar juntas el trabajo realizado, el impacto de nuestra labor y la comunidad que estamos construyendo. Un pequeño paraíso de relajación que nos recuerda que cada esfuerzo tiene su recompensa.</p>
+                </div>
+                <div class="campana-imagen-principal">
+                    <img src="images/Piscina 1.jpg" alt="Imagen principal Día de Piscina" class="active">
+                    <img src="images/Piscina 2.jpg" alt="Piscina 2">
+                    <img src="images/Piscina 3.jpg" alt="Piscina 3">
+                    <img src="images/Piscina 4.jpg" alt="Piscina 4">
+                    <img src="images/Piscina 5.jpg" alt="Piscina 5">
+                </div>
+                <div class="campana-galeria-simple">
+                    <img src="images/Piscina 1.jpg" alt="Piscina 1">
+                    <img src="images/Piscina 2.jpg" alt="Piscina 2">
+                    <img src="images/Piscina 3.jpg" alt="Piscina 3">
+                    <img src="images/Piscina 4.jpg" alt="Piscina 4">
+                    <img src="images/Piscina 5.jpg" alt="Piscina 5">
+                </div>
+            </div>
+
+            <div class="campana-completa" data-campana="picnic-por-halloween">
+                <div class="lluvia-container"></div>
+                <div class="campana-info">
+                    <h3>Picnic por Halloween</h3>
+                    <p>En Halloween, organizamos un picnic muy especial con nuestras becarias del programa She Speaks English y algunas voluntarias. Fue una jornada llena de diversión, antifaces y, lo más importante, un espacio para compartir la cultura estadounidense. Durante el picnic, leímos juntas un cuento de brujas en inglés, lo que nos permitió ver el progreso de nuestras becarias y su crecimiento en el idioma. Fue una oportunidad perfecta para disfrutar de una festividad tan simbólica mientras reforzábamos los aprendizajes adquiridos en el programa. Este evento no solo celebró Halloween, sino también el esfuerzo y la dedicación de todas nuestras participantes, creando un ambiente cálido, educativo y lleno de alegría.</p>
+                </div>
+                <div class="campana-imagen-principal">
+                    <img src="images/Halloween 1.jpg" alt="Imagen principal Picnic Halloween" class="active">
+                    <img src="images/Halloween 2.jpg" alt="Halloween 2">
+                    <img src="images/Halloween 3.jpg" alt="Halloween 3">
+                    <img src="images/Halloween 4.jpg" alt="Halloween 4">
+                    <img src="images/Halloween 5.jpg" alt="Halloween 5">
+                    <img src="images/Halloween 6.jpg" alt="Halloween 6">
+                    <img src="images/Halloween 7.jpg" alt="Halloween 7">
+                </div>
+                <div class="campana-galeria-simple">
+                    <img src="images/Halloween 1.jpg" alt="Halloween 1">
+                    <img src="images/Halloween 2.jpg" alt="Halloween 2">
+                    <img src="images/Halloween 3.jpg" alt="Halloween 3">
+                    <img src="images/Halloween 4.jpg" alt="Halloween 4">
+                    <img src="images/Halloween 5.jpg" alt="Halloween 5">
+                    <img src="images/Halloween 6.jpg" alt="Halloween 6">
+                    <img src="images/Halloween 7.jpg" alt="Halloween 7">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexión Femenina. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/1NVFYoZARJ/?mibextid=wwXIfr" target="_blank" aria-label="Enlace a nuestra página de Facebook">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/conexionfemeninachincha?igsh=MWI1MTY4Z2lzcXNiMA==" target="_blank" aria-label="Enlace a nuestra página de Instagram">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@conexion_femenina?_t=ZM-8vZD4TjtetR&_r=1" target="_blank" aria-label="Enlace a nuestra página de TikTok">
+                <img src="images/tiktok-icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p class="correo-footer">conexionfemenina2024@gmail.com</p>
+        <p>Hecho con amor 🥞</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="cerrar-lightbox">&times;</span>
+        <div class="lightbox-imagen-contenedor">
+            <img src="" alt="" id="lightbox-imagen">
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/actividades.js"></script>
+</body>
+</html>

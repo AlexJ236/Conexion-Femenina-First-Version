@@ -1,0 +1,266 @@
+/* --- Estilos específicos para la página Programas (CAROUSEL INTERACTIVO - TAMAÑO FIJO Y DESLIZAMIENTO) --- */
+.programas-detalle-seccion {
+    padding: 60px 8%;
+}
+
+.programas-detalle-seccion h2 {
+    color: var(--color-texto-titulos);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.programa-completo {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna en escritorio */
+    margin-bottom: 50px;
+    background-color: var(--color-fondo-secciones);
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    padding: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.programa-info {
+    width: 80%; /* Ancho para el texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+.programa-info h3 {
+    color: var(--color-primario);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el título */
+}
+
+.programa-info p {
+    line-height: 1.7;
+    margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.programa-imagen-principal {
+    width: 60%; /* Ancho para la imagen principal (ajusta según necesites) */
+    height: 400px; /* Altura fija para el contenedor de la imagen (ajusta según la altura deseada) */
+    border-radius: 8px;
+    box-shadow: var(--sombra-ligera);
+    overflow: hidden;
+    margin-top: 20px; /* Espacio entre el texto y la imagen */
+    position: relative; /* Necesario para el apilamiento de imágenes */
+}
+
+.programa-imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción y recortando si es necesario */
+    position: absolute; /* Para el efecto de transición */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transición para el deslizamiento */
+    z-index: 1; /* Asegura que las imágenes estén apiladas */
+}
+
+.programa-imagen-principal img.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2; /* Asegura que la imagen activa esté visible */
+    position: static; /* Vuelve al flujo normal para ser visible */
+}
+
+.programa-galeria-simple {
+    width: 80%; /* Ancho para la galería de miniaturas */
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    overflow-x: auto; /* Permite desplazamiento horizontal si hay muchas imágenes */
+    padding-bottom: 15px; /* Espacio para la barra de desplazamiento */
+    justify-content: center; /* Centra las miniaturas */
+}
+
+.programa-galeria-simple img {
+    max-height: 80px; /* Altura máxima para las miniaturas */
+    width: auto;
+    border-radius: 5px;
+    box-shadow: var(--sombra-ligera);
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+    cursor: pointer; /* Indica que las miniaturas son clickeables */
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.programa-galeria-simple img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode .programa-completo {
+    background-color: var(--color-fondo-secciones);
+    box-shadow: var(--sombra-suave);
+}
+
+/* --- Media queries para diseño responsive --- */
+@media (max-width: 768px) {
+    .programa-completo {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .programa-info {
+        width: 100%;
+        text-align: left; /* Vuelve a la alineación izquierda en móviles */
+    }
+
+    .programa-info h3 {
+        text-align: left; /* Vuelve a la alineación izquierda en móviles */
+    }
+
+    .programa-imagen-principal {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        position: relative; /* Mantiene el posicionamiento relativo en móviles */
+    }
+
+    .programa-imagen-principal img {
+        object-fit: contain; /* O cover si prefieres en móviles */
+        position: absolute; /* Mantiene el posicionamiento absoluto en móviles para el carrusel */
+    }
+
+    .programa-galeria-simple {
+        width: 100%;
+        justify-content: flex-start; /* Alinea las miniaturas a la izquierda en móviles */
+    }
+
+    .programa-galeria-simple img {
+        max-height: 60px;
+    }
+}
+
+/* --- Media queries para escritorio --- */
+@media (min-width: 769px) {
+    .programa-completo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programa-info {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .programa-info h3 {
+        text-align: center;
+    }
+
+    .programa-imagen-principal {
+        width: 80%;
+        /* Establece una altura máxima para el contenedor basada en la altura deseada para las imágenes horizontales */
+        max-height: 450px; /* Ajusta este valor según la altura de tus imágenes horizontales */
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden; /* Asegura que object-fit funcione correctamente */
+    }
+
+    .programa-imagen-principal img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Muestra la imagen completa, manteniendo su proporción */
+        object-position: center center; /* Centra la imagen horizontal y verticalmente */
+    }
+
+    .programa-imagen-principal img.active {
+        position: static;
+    }
+
+    .programa-galeria-simple {
+        display: flex; /* o inline-block */
+        flex-wrap: wrap; /* o nowrap */
+        overflow-x: auto; /* o scroll o visible */
+        white-space: normal; /* o nowrap */
+      }
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode .programa-completo {
+    background-color: var(--color-fondo-secciones);
+    box-shadow: var(--sombra-suave);
+}
+
+/* Estilos para los iconos de redes sociales en el footer */
+.redes-sociales img, .social-media img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.redes-sociales img:last-child, .social-media img:last-child {
+    margin-right: 0;
+}
+
+.redes-sociales, .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el correo electrónico en el footer (centrado) */
+.correo-footer, .email-footer {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* Estilos para el Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto; /* Permite el scroll si la imagen es muy grande */
+}
+
+.lightbox-imagen-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; /* Limita el ancho máximo del contenedor de la imagen */
+    max-height: 90%; /* Limita la altura máxima del contenedor de la imagen */
+}
+
+#lightbox-imagen {
+    display: block;
+    width: auto; /* Ancho automático basado en la proporción */
+    height: auto; /* Altura automática basada en la proporción */
+    max-width: 80vw; /* Ancho máximo relativo al ancho de la ventana (viewport width) */
+    max-height: 80vh; /* Altura máxima relativa a la altura de la ventana (viewport height) */
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+}
+
+.cerrar-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar-lightbox:hover {
+    color: #ccc;
+}
