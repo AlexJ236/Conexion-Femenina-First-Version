@@ -1,29 +1,24 @@
-# Conexión Femenina - Sitio Web Oficial
+Conexión Femenina - Official Website
+Description
+Please note: This is the first version of the website, developed in a single day due to the project's urgent requirements.
 
-## Descripción
+This repository contains the source code for the official website of Conexión Femenina, an organization dedicated to empowering women in Chincha, Peru, through educational programs, personal development, support, and solidarity campaigns. The website serves as an informational platform to present the organization's mission, vision, values, programs, campaigns, and activities, as well as to facilitate contact and donations.
 
-Este repositorio contiene el código fuente del sitio web oficial de **Conexión Femenina**, una organización dedicada a empoderar a mujeres en Chincha, Perú, a través de programas educativos, desarrollo personal, apoyo y campañas solidarias. El sitio web sirve como plataforma informativa para presentar la misión, visión, valores, programas, campañas y actividades de la organización, además de facilitar el contacto y las donaciones.
-
-## Características Principales
-
-* **Información Detallada:** Presenta secciones sobre la organización ("Sobre Nosotras"), sus programas ("She Speaks English", "Entre Nosotras", "Conexión sin Barreras", "Promo que Inspira"), campañas solidarias ("Un Abrazo Contra el Frío", "Campañas Navideñas", "Cierra Ciclos y Abre Sonrisas") y actividades recreativas.
-* **Multilenguaje:** Soporte para Español (predeterminado) e Inglés, con selector de idioma fácil de usar.
-* **Selector de Tema:** Permite a los usuarios cambiar entre un tema claro y un tema oscuro para mejorar la accesibilidad y preferencia visual. La preferencia se guarda en el navegador.
-* **Diseño Responsivo:** Adaptado para visualizarse correctamente en diferentes tamaños de pantalla (escritorio, tableta, móvil).
-* **Galerías Interactivas:** Carruseles de imágenes con miniaturas y efecto lightbox para visualizar las fotos de programas, campañas y actividades.
-* **Animaciones Sutiles:** Incluye efectos visuales como la "lluvia de emojis" en las secciones de campañas y actividades.
-* **Integración con PayPal:** Incluye botones de donación de PayPal para facilitar el apoyo a la organización.
-* **Enlaces a Redes Sociales:** Conecta con los perfiles de Conexión Femenina en Facebook, Instagram y TikTok.
-
-## Tecnologías Utilizadas
-
-* **HTML5:** Para la estructura del contenido.
-* **CSS3:** Para los estilos, diseño visual, variables de color (temas) y animaciones.
-* **JavaScript (Vanilla):** Para la interactividad, como el cambio de tema, selector de idioma, carruseles de imágenes y lightbox.
-
-## Estructura del Proyecto
-
-El proyecto sigue una estructura estándar para facilitar la navegación y el mantenimiento:
+Main Features
+Detailed Information: Presents sections about the organization ("About Us"), its programs ("She Speaks English," "Amongst Ourselves," "Connection Without Barriers," "Inspiring Cohort"), solidarity campaigns ("A Hug Against the Cold," "Christmas Campaigns," "Close Cycles and Open Smiles"), and recreational activities.
+Multilanguage: Support for Spanish (default) and English, with an easy-to-use language selector.
+Theme Selector: Allows users to switch between a light and a dark theme to improve accessibility and visual preference. The preference is saved in the browser.
+Responsive Design: Adapted to display correctly on different screen sizes (desktop, tablet, mobile).
+Interactive Galleries: Image carousels with thumbnails and a lightbox effect to view photos of programs, campaigns, and activities.
+Subtle Animations: Includes visual effects such as "emoji rain" in the campaigns and activities sections.
+PayPal Integration: Includes PayPal donation buttons to facilitate support for the organization.
+Social Media Links: Connects to Conexión Femenina's profiles on Facebook, Instagram, and TikTok.
+Technologies Used
+HTML5: For content structure.
+CSS3: For styles, visual design, color variables (themes), and animations.
+JavaScript (Vanilla): For interactivity, such as theme switching, language selector, image carousels, and lightbox.
+Project Structure
+The project follows a standard structure to facilitate navigation and maintenance:
 
 /
 │
@@ -58,22 +53,19 @@ El proyecto sigue una estructura estándar para facilitar la navegación y el ma
 │
 └── LICENSE                # Archivo de licencia (MIT)
 
-## Cómo Visualizar
+How to View
+Simply open any of the .html files (for example, index.html) in your web browser. No local server is required, as it is a static site.
 
-Simplemente abre cualquiera de los archivos `.html` (por ejemplo, `index.html`) en tu navegador web. No se requiere un servidor local, ya que es un sitio estático.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Licencia
-
-Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más detalles.
-
-## Contacto
-
-* **Organización:** Conexión Femenina
-* **Email:** conexionfemenina2024@gmail.com
-* **Redes Sociales:**
+Contact
+Organization: Conexión Femenina
+Email: conexionfemenina2024@gmail.com
+Social Media:
     * [Facebook](https://www.facebook.com/share/1NVFYoZARJ/?mibextid=wwXIfr)
     * [Instagram](https://www.instagram.com/conexionfemeninachincha?igsh=MWI1MTY4Z2lzcXNiMA==)
     * [TikTok](https://www.tiktok.com/@conexion_femenina?_t=ZM-8vZD4TjtetR&_r=1)
 
 ---
-Hecho con amor 🥞 por Conexion Femenina.
+Made with love 🥞 by Conexion Femenina.
